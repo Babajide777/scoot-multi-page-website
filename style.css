@@ -43,10 +43,35 @@
     width: 180px;
 }
 
-.scoot-jumbotron .img img{
+.scoot-jumbotron .img-1 img{
     position: absolute;
     width: 447px;
     height: 138px;
     left: -312px;
     top: 480px;
+}
+
+.scoot-jumbotron .img-2 img{
+    display: none;
+}
+
+@media (min-width: 600px){
+    .scoot-jumbotron{
+        padding: 80px;
+        font-size: 56px;
+        letter-spacing: -2.5px;
+    }
+    .scoot-jumbotron .img-1 img{
+        position: absolute;
+        left: -207px;
+        top: 480px;
+    }
+    .scoot-jumbotron .img-2 img{
+        display: block;
+        position: absolute;
+        width: 234px;
+        height: 63px;
+        left: 397px;
+        top: 550px;
+    }
 }
