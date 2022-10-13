@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap');
+
+:root{
+    --Yellow: hsl(49, 97%, 58%);
+    --dark-navy: hsl(216, 17%, 35%);
+    --Dim-grey: hsl(217, 12%, 62%);
+    --Snow: hsl(214, 37%, 96%);
+    --Light-grey: hsl(212, 41%, 93%);
+    --Light-Yellow: hsl(39, 100%, 94%);
+}
+
 *{
     margin: 0;
     padding: 0;
