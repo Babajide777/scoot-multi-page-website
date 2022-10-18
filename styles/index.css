@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 section{
@@ -78,3 +79,64 @@ section{
     width: 193px;
     height: 138px;
 }
+
+@media (min-width: 600px){
+    .content-image img{
+        width: 60%;
+    }
+    .third-page-text h2{
+        font-size: 48px;
+        padding: 10px;
+    }
+    .item-pattern-1 img{
+        width: 564px;
+        height: 138px;
+    }
+    .item-pattern-2 img{
+        width: 250px;
+        height: 138px;
+    }
+    .item-pattern-3 img{
+        width: 223px;
+        height: 137.64px;
+    }
+    .item-pattern-1{
+        left: 30px;
+        top: 210px;
+    }
+    .item-pattern-2{
+        right: 330px;
+        bottom: 200px;
+    }
+    .item-pattern-3{
+        bottom: 130px;
+        left: 370px;
+    }
+    section{
+        position: relative;
+    }
+    .circles .circle-1 img{
+        width: 250px;
+    }
+    .circles .circle-1{
+        position: absolute;
+        top: 310px;
+        right: -90px;
+        z-index: -1;
+    }
+    .circles .circle-2 img{
+        width: 280px;
+    }
+
+    .circles .circle-2{
+        position: absolute;
+    }
+    .circles .circle-3 img{
+        width: 280px;
+    }
+    .circles .circle-3{
+        position: absolute;
+    }
+}
+
+@media (min-width: 1024px){}
