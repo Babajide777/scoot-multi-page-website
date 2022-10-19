@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+section{
+    width: 90%;
+}
+
+.item-container{
+    text-align: center;
+    margin: 120px 0;
+}
+
+.content-image img{
+    border-radius: 50%;
+    width: 90%;
+}
+
+.third-page-text h2{
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.third-page-text p{
+    margin-bottom: 32px;
+}
+
+.third-page-text button{
+    width: 180px;
+    height: 53px;
+    border: none;
+    font-weight: 700;
+}
+
+.item-image{
+    position: relative;
+}
+
+.item-pattern-1{
+    position: absolute;
+    left: 50px;
+    top: 190px;
+}
+
+.item-pattern-2{
+    position: absolute;
+    right: 150px;
+    bottom: 200px;
+}
+
+.item-pattern-3{
+    position: absolute;
+    bottom: 190px;
+    left: 200px;
+}
+
+.item-pattern-1 img{
+    width: 347px;
+    height: 138px;
+}
+
+.item-pattern-2 img{
+    width: 400px;
+    height: 138px;
+}
+
+.item-pattern-3 img{
+    width: 193px;
+    height: 138px;
+}
+
+@media (min-width: 600px){
+    .content-image img{
+        width: 60%;
+    }
+    .third-page-text h2{
+        font-size: 48px;
+        padding: 10px;
+    }
+    .item-pattern-1 img{
+        width: 564px;
+        height: 138px;
+    }
+    .item-pattern-2 img{
+        width: 250px;
+        height: 138px;
+    }
+    .item-pattern-3 img{
+        width: 223px;
+        height: 137.64px;
+    }
+    .item-pattern-1{
+        left: 30px;
+        top: 210px;
+    }
+    .item-pattern-2{
+        right: 330px;
+        bottom: 200px;
+    }
+    .item-pattern-3{
+        bottom: 130px;
+        left: 370px;
+    }
+    section{
+        position: relative;
+    }
+    .circles .circle-1 img{
+        width: 250px;
+    }
+    .circles .circle-1{
+        position: absolute;
+        top: 310px;
+        right: -90px;
+        z-index: -1;
+    }
+    .circles .circle-2 img{
+        width: 280px;
+    }
+
+    .circles .circle-2{
+        position: absolute;
+    }
+    .circles .circle-3 img{
+        width: 280px;
+    }
+    .circles .circle-3{
+        position: absolute;
+    }
+}
+
+@media (min-width: 1024px){}
