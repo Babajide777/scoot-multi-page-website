@@ -21,6 +21,8 @@ body{
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    font-size: 15px;
+    line-height: 25px;
 }
 
 section{
