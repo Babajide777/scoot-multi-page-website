@@ -32,6 +32,10 @@ main{
     color: var(--Dim-grey);
 }
 
+.triangle-down{
+    display: none;
+}
+
 .world-location{
     display: flex;
     flex-direction: column;
@@ -108,3 +112,73 @@ main{
 .map .world-map-desktop{
     display: none;
 }
+
+@media only screen and (min-width: 600px){
+    .map .world-map-mobile{
+        display: none;
+    }
+    .map .world-map-tablet{
+        display: block;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .world-location button{
+        font-size: 13px;
+        padding: 0px 30px;
+        background-color: var(--Yellow);
+        background-size: cover;
+    }
+    .world-location button h3{
+        padding-top: 20px;
+    }
+    .map{
+        position: relative;
+    }
+    .triangle-down {
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid var(--Yellow);
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+    .world-location button:nth-of-type(1){
+        position: absolute;
+        left: 50px;
+        top: 120px;
+    }
+    .world-location button:nth-of-type(2){
+        position: absolute;
+        left: 200px;
+        top: 80px;
+    }
+    .world-location button:nth-of-type(3){
+        position: absolute;
+        right: 30px;
+        top: 140px;
+    }
+    .world-location button:nth-of-type(4){
+        position: absolute;
+        right: 70px;
+        top: 270px;
+    }
+    .location-text h2{
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .location-text p{
+        margin: 40px 0;
+    }
+    .location-text button{
+        width: 30%;
+    }
+    .location-text .btn{
+        margin-bottom: 120px;
+    }
+}
+    
