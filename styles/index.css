@@ -139,7 +139,7 @@
     }
 }
 
-
+/* moblie navbar */
 * {
     margin: 0px;
     padding: 0px;
@@ -164,7 +164,7 @@ body {
 }
 
 .btn-ul{
-    background-color: #333a44;
+    background-color: var(--dark-navy);
     width: 60%;
     height: 100vh;
 }
@@ -180,12 +180,13 @@ body {
     left: 12px;
 }
 
-.close{
+.klose{
     position: relative;
     bottom: 10px;
     left: 12px;
     display: none;
 }
+
 
 .links-ul{
     list-style: none;
@@ -193,8 +194,50 @@ body {
 
 
 .links-ul a{
-    color: white;
+    color: var(--Light-grey);
     text-decoration: none;
+    font-family: 'Space Mono';
+    display: flex;
+}
+ul > :first-child{
+    display: flex;
+    position: absolute;
+    width: 89px;
+    height: 123px;
+    left: 32px;
+    top: 128px;
+}
+
+ul > :first-child + li + li{
+    display: flex;
+    position: absolute;
+    height: 25px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 25px/2);
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
+}
+
+ul > :first-child + li + li + li{
+    display: flex;
+    position: absolute;
+    height: 25px;
+    left: 0%;
+    right: 12.36%;
+    top: calc(50% - 25px/2 + 49px);
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height, or 139% */
 }
 
 .links-ul{
@@ -203,6 +246,8 @@ body {
     height: 123px;
     left: 32px;
     top: 128px;
+    display: flex;
+    justify-content: space-between;
 }
 
 div.btn-a{
@@ -211,10 +256,11 @@ div.btn-a{
     height: 53px;
     left: 32px;
     top: 590px;
+    background-color: var(--Yellow);
 }
 
 .nav-active {
-    transform: translateX(0%);
+    transform: translate(0%);
 }
 
 @keyframes navLinkFade {
@@ -228,3 +274,243 @@ div.btn-a{
     }
 }
 
+.btnn{
+    position: absolute;
+    height: 25px;
+    left: 0%;
+    right: 0%;
+    top: calc(50% - 25px/2);
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+    background-color: var(--Yellow);
+    border-style: none;
+}
+
+.btnn a{
+    color: var(--Snow);
+    text-decoration: none;
+}
+
+
+/* Tablet navbar */
+
+@media  screen and (min-width:600px) {
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    line-height: 25px;
+    }
+    nav{
+        display: flex;
+        padding: 20px;
+        position: absolute;
+        width: 768px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+        background-color: #ffffff;
+        min-height: 8vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .burger{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        width: 600px;
+        height: 28.56px;
+        left: 39px;
+        top: 34px;
+    }
+    .btn-ul{
+        background-color: #ffffff;
+    }
+    .links-ul{
+        display: flex;
+        position: absolute;
+        width: 249px;
+        height: 25px;
+        left: 205px;
+        top: 36px;
+        justify-content: space-between;
+
+    }
+    .links-ul a{
+        color: var(--Dim-grey);
+        font-family: 'Space Mono';
+        font-style: normal;
+        display: flex;
+    }
+    ul > :first-child{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 0%;
+        right: 81.53%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+    }
+    ul > :first-child + li + li{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 31.33%;
+        right: 38.96%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167%  */
+    }
+    ul > :first-child + li + li + li{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 73.9%;
+        right: 0%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+    }
+    div.btn-a{
+        position: absolute;
+        width: 180px;
+        height: 53px;
+        left: 548px;
+        top: 22px;
+        justify-content: space-around;
+    }   
+}
+
+/* desktop*/
+@media screen and (min-width:1024px) {
+    * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    line-height: 25px;
+    }
+    nav{
+        display: flex;
+        position: absolute;
+        width: 1440px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+
+    }
+    .logo{
+        position: absolute;
+        width: 107.82px;
+        height: 28.56px;
+        left: 169px;
+        top: 34px;
+    }
+    .links-ul{
+        display: flex;
+        position: absolute;
+        width: 249px;
+        height: 25px;
+        left: 335px;
+        top: 36px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .links-ul a{
+        color: var(--Dim-grey);
+        font-family: 'Space Mono';
+        font-style: normal;
+        display: flex;
+    }
+    div.btn-a{
+        position: absolute;
+        width: 180px;
+        height: 53px;
+        left: 1095px;
+        top: 22px;
+
+    }
+    ul > :first-child{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 0%;
+        right: 81.53%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+    }
+    ul > :first-child + li + li{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 31.33%;
+        right: 38.96%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+    }
+    ul > :first-child + li + li + li{
+        display: flex;
+        position: absolute;
+        height: 25px;
+        left: 73.9%;
+        right: 0%;
+        top: calc(50% - 25px/2);
+
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        /* identical to box height, or 167% */
+    }
+    
+}
