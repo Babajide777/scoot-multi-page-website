@@ -514,3 +514,147 @@ div.btn-a{
     }
     
 }
+
+
+/*our values */
+
+.ourvalues{
+    margin: 0;
+    padding: 0;
+    width: 311px;
+    height: 1535px;
+    left: 32px;
+    top: 1662px;
+}
+.ourcontainer{
+    width: 311px;
+    height: 1443px;
+    left: 32px;
+    top: 1758px;
+    margin-top: 65px;
+    margin-left: 30px;
+
+}
+
+.ourh1{
+    width: 311px;
+    height: 32px;
+    left: 32px;
+    top: 1662px;
+    font-family: 'space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1.42857px;
+    color: var(--Dim-grey);
+}
+.boxi{
+    width: 311px;
+    height: 459px;
+    left: 32px;
+    top: 1758px;
+
+}
+.boxii{
+    width: 311px;
+    height: 434px;
+    left: 32px;
+    top: 2273px;
+
+}
+.boxiii{
+    width: 311px;
+    height: 434px;
+    left: 32px;
+    top: 2763px;
+
+}
+.img1div{
+    width: 240px;
+    height: 288px;
+    left: 68px;
+    top: 1758px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+}
+.img1{
+    width: 240px;
+    height: 240px;
+    left: 68px;
+    top: 1758px;
+    border-radius: 50%;
+    display: flex;
+}
+.img2div{
+    width: 240px;
+    height: 288px;
+    left: 68px;
+    top: 2273px;
+    border-radius: 50%;
+    display: flex;
+}
+.img2{
+    width: 240px;
+    height: 240px;
+    left: 68px;
+    top: 2273px;
+    border-radius: 50%;
+    display: flex;
+}
+.img3div{
+    width: 240px;
+    height: 288px;
+    left: 68px;
+    top: 2767px;
+    border-radius: 50%;
+    display: flex;
+}
+.img3{
+    width: 240px;
+    height: 240px;
+    left: 68px;
+    top: 2767px;
+    border-radius: 50%;
+    display: flex;
+}
+.sp1{
+    width: 96px;
+    height: 96px;
+    left: 140px;
+    top: 1950px;
+
+    background: var(--Yellow);
+    height: 28px;
+    left: 35.42%;
+    right: 34.38%;
+    top: calc(50% - 28px/2);
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: -1.07143px;
+
+    color: var(--dark-navy);
+    border-radius: 50%;
+    margin-bottom: auto;
+}
+.dsp1{
+    background-color: var(--Yellow);
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin-left: 65px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+}
