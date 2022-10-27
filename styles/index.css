@@ -516,18 +516,23 @@ div.btn-a{
 }
 
 
+
+
+
+
+
 /*our values */
 
 .ourvalues{
     margin: 0;
     padding: 0;
-    width: 311px;
+    width: 100%;
     height: 1535px;
     left: 32px;
     top: 1662px;
 }
 .ourcontainer{
-    width: 311px;
+    width: 100%;
     height: 1443px;
     left: 32px;
     top: 1758px;
@@ -537,7 +542,7 @@ div.btn-a{
 }
 
 .ourh1{
-    width: 311px;
+    width: 100%;
     height: 32px;
     left: 32px;
     top: 1662px;
@@ -551,25 +556,22 @@ div.btn-a{
     color: var(--Dim-grey);
 }
 .boxi{
-    width: 311px;
+    width: 100%;
     height: 459px;
     left: 32px;
     top: 1758px;
-
 }
 .boxii{
-    width: 311px;
+    width: 100%;
     height: 434px;
     left: 32px;
     top: 2273px;
-
 }
 .boxiii{
-    width: 311px;
+    width: 100%;
     height: 434px;
     left: 32px;
     top: 2763px;
-
 }
 .img1div{
     width: 240px;
@@ -577,8 +579,6 @@ div.btn-a{
     left: 68px;
     top: 1758px;
     border-radius: 50%;
-    position: absolute;
-    display: flex;
 }
 .img1{
     width: 240px;
@@ -586,7 +586,7 @@ div.btn-a{
     left: 68px;
     top: 1758px;
     border-radius: 50%;
-    display: flex;
+    margin-left: 50px;
 }
 .img2div{
     width: 240px;
@@ -594,7 +594,6 @@ div.btn-a{
     left: 68px;
     top: 2273px;
     border-radius: 50%;
-    display: flex;
 }
 .img2{
     width: 240px;
@@ -602,7 +601,7 @@ div.btn-a{
     left: 68px;
     top: 2273px;
     border-radius: 50%;
-    display: flex;
+    margin-left: 50px;
 }
 .img3div{
     width: 240px;
@@ -610,7 +609,6 @@ div.btn-a{
     left: 68px;
     top: 2767px;
     border-radius: 50%;
-    display: flex;
 }
 .img3{
     width: 240px;
@@ -618,15 +616,114 @@ div.btn-a{
     left: 68px;
     top: 2767px;
     border-radius: 50%;
-    display: flex;
+    margin-left: 50px;
 }
 .sp1{
-    width: 96px;
-    height: 96px;
+    width: 80px;
+    height: 80px;
     left: 140px;
     top: 1950px;
+    margin-left: 10px;
+    margin-top: 33px;
 
     background: var(--Yellow);
+    height: 28px;
+    left: 35.42%;
+    right: 34.38%;
+    /*top: calc(50% - 28px/2);*/
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: -1.07143px;
+
+    color: var(--dark-navy);
+    border-radius: 50%;
+}
+.dsp1{
+    position: absolute;
+    background-color: var(--Yellow);
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    margin-left: 149px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 290px;
+}
+.hh1{
+    width: 311px;
+    height: 28px;
+    left: 32px;
+    top: 2062px;
+    margin-right: 100px;
+
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: -1.07143px;
+
+    color: var(--dark-navy);
+}
+#hb1{
+     margin-top: 80px;
+}
+#hb2{
+    margin-top: 50px;
+}
+#hb3{
+    margin-top: 25px;
+}
+.pp1{
+    width: 311px;
+    height: 100px;
+    left: 32px;
+    top: 2117px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+    font-family: 'Lexend Deca';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: var(--Dim-grey);
+
+}
+.dsp2{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 50%;
+    width: 96px;
+    height: 96px;
+    margin-left: 149px;
+    margin-top: 820px;
+    text-align: center;
+
+    background: var(--Yellow);
+}
+.sp2{
+    position: absolute;
     height: 28px;
     left: 35.42%;
     right: 34.38%;
@@ -643,18 +740,169 @@ div.btn-a{
     letter-spacing: -1.07143px;
 
     color: var(--dark-navy);
-    border-radius: 50%;
-    margin-bottom: auto;
+
 }
-.dsp1{
-    background-color: var(--Yellow);
+.dsp3{
+    position: absolute;
     left: 0%;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    margin-left: 65px;
+    border-radius: 50%;
     width: 96px;
     height: 96px;
-    border-radius: 50%;
-    display: flex;
+    margin-left: 149px;
+    margin-top: 1325px;
+    text-align: center;
+
+    background: var(--Yellow);
+}
+.sp3{
+    position: absolute;
+    height: 28px;
+    left: 35.42%;
+    right: 34.38%;
+    top: calc(50% - 28px/2);
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+    letter-spacing: -1.07143px;
+
+    color: var(--dark-navy);
+
+}
+/* END OF MOBILE */
+
+
+/* TABLET BEGINS */
+
+@media screen and (min-width: 600px) {
+    .ourvalues{
+        padding: auto;
+        margin: auto;
+        width: 457px;
+        height: 1584px;
+        left: 155px;
+        top: 2054px;
+    }
+    .ourcontainer{
+        padding: auto;
+        margin: auto;
+        width: 457px;
+        line-height: 32px;
+        margin-left: 70px;
+        align-items: center;
+    }
+    .hh1 .pp1{
+        position: absolute;
+        width: 457px;
+        height: 130px;
+        left: 155px;
+        top: 2534px;
+    }
+    .dsp1{
+        padding: auto;
+        margin: auto;
+        margin-top: 270px;
+    }
+    .dsp2{
+        padding: auto;
+        margin: auto;
+        margin-top: 820px;
+
+    }
+    .dsp3{
+        padding: auto;
+        margin: auto;
+        margin-top: 1360px;
+    }
+    .ourh1{
+        margin-bottom: 50px;
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1024px) {
+    .ourvalues{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        left: 165px;
+        top: 1546px;
+    }
+    .ourcontainer{
+        height: 60px;
+        display: flex;
+        margin-left: 97px;
+    }
+    .ourcontainer > div {
+        margin: auto;
+        padding: auto;
+    }
+    .dsp1{
+        align-content: center;
+        position: absolute;
+        padding: auto;
+        margin: auto;
+        margin-left: 210px;
+        margin-top: 270px;
+    }
+    .dsp2{
+        margin: auto;
+        padding: auto;
+        margin-left: 580px;
+        margin-top: 270px;
+    }
+    .dsp3{
+        margin: auto;
+        padding: auto;
+        margin-left: 920px;
+        margin-top: 270px;
+    }
+    .boxi{
+        width: 350px;
+        height: 512px;
+        left: 165px;
+        top: 1642px;
+
+    }
+    .boxii{
+        width: 350px;
+        height: 512px;
+        left: 545px;
+        top: 1642px;
+
+    }
+    .boxiii{
+        width: 350px;
+        height: 512px;
+        left: 925px;
+        top: 1642px;
+
+    }
+    .img1div{
+        width: 350px;
+        height: 350px;
+        left: 165px;
+        top: 1642px;
+    }
+    .img2div{
+        width: 350px;
+        height: 350px;
+        left: 545px;
+        top: 1642px;
+    }
+    .img3div{
+        width: 350px;
+        height: 350px;
+        left: 925px;
+        top: 1642px;
+    }
 }
