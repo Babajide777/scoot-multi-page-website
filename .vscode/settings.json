@@ -1,0 +1,9 @@
+{
+    "editor.fontSize": 10,
+    "editor.tabSize": 4,
+    "editor.autoClosingDelete": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "workbench.experimental.editSessions.autoStore": "onShutdown",
+    "workbench.list.fastScrollSensitivity": 10
+}
