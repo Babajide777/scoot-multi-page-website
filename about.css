@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+
+:root {
+  --Yellow: hsl(40, 97%, 58%);
+  --dark-navy: hsl(216, 17%, 35%);
+  --Dim-grey: hsl(217, 12%, 62%);
+  --Snow: hsl(214, 37%, 96%);
+  --Light-grey: hsl(212, 41%, 93%);
+  --Light-Yellow: hsl(39, 100%, 94%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.item-container {
+  text-align: center;
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-image img {
+  border-radius: 50%;
+  width: 90%;
+}
+
+.third-page-text{
+  padding: 45px;
+}
+
+.third-page-text h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: var(--dark-navy);
+}
+
+.third-page-text p {
+  margin-bottom: 15px;
+  color: var(--Dim-grey);
+  padding-bottom: 20px;
+}
