@@ -31,6 +31,8 @@ section {
 .item-container {
   text-align: center;
   margin: 120px 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-image img {
