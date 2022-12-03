@@ -24,7 +24,8 @@ body {
 }
 
 section {
-  width: 90%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .item-container {
@@ -37,14 +38,21 @@ section {
   width: 90%;
 }
 
+.third-page-text{
+  padding: 45px;
+}
+
 .third-page-text h2 {
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 32px;
+  color: var(--dark-navy);
 }
 
 .third-page-text p {
-  margin-bottom: 32px;
+  margin-bottom: 15px;
+  color: var(--Dim-grey);
+  padding-bottom: 20px;
 }
 
 .third-page-text button {
@@ -52,6 +60,8 @@ section {
   height: 53px;
   border: none;
   font-weight: 700;
+  background-color: var(--Yellow);
+  color: var(--Snow);
 }
 
 .item-image {
@@ -60,34 +70,34 @@ section {
 
 .item-pattern-1 {
   position: absolute;
-  left: 62px;
-  top: 190px;
+  left: 52px;
+  bottom: 0px;
 }
 
 .item-pattern-2 {
   position: absolute;
-  right: 150px;
+  right: 70px;
   bottom: 200px;
 }
 
 .item-pattern-3 {
   position: absolute;
   bottom: 190px;
-  left: 215px;
+  left: 195px;
 }
 
 .item-pattern-1 img {
-  width: 347px;
+  width: 734px;
   height: 138px;
 }
 
 .item-pattern-2 img {
-  width: 400px;
+  width: 735px;
   height: 138px;
 }
 
 .item-pattern-3 img {
-  width: 193px;
+  width: 735px;
   height: 138px;
 }
 
@@ -99,10 +109,22 @@ section {
 @media (min-width: 600px) {
   .circles {
     display: block;
+    z-index: 1;
+  }
+  .circle-1{
     position: absolute;
-    right: -250px;
+    right: -270px;
     top: 40px;
-    overflow: hidden;
+  }
+  .circle-2{
+    position: absolute;
+    left: -270px;
+    top: 40px;
+  }
+  .circle-3{
+    position: absolute;
+    right: -270px;
+    top: 25px;
   }
   .circles img {
     width: 350px;
@@ -117,35 +139,21 @@ section {
     font-size: 48px;
     padding: 10px;
   }
-  .item-pattern-1 img {
-    width: 564px;
-    height: 138px;
-  }
-  .item-pattern-2 img {
-    width: 250px;
-    height: 138px;
-  }
-  .item-pattern-3 img {
-    width: 223px;
-    height: 137.64px;
-  }
   .item-pattern-1 {
-    left: 30px;
-    top: 210px;
+    left: 40px;
+    top: 250px;
+    z-index: 2;
   }
   .item-pattern-2 {
-    right: 330px;
-    bottom: 200px;
+    right: 250px;
+    bottom: 240px;
   }
   .item-pattern-3 {
     bottom: 130px;
-    left: 370px;
+    left: 300px;
+    z-index: 2;
   }
 }
 
-@media (min-width: 1024px) {
-  .circles{
-    overflow: hidden;
-  }
-}
+@media (min-width: 1024px) {}
   
