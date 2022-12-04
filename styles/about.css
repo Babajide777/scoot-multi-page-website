@@ -88,3 +88,42 @@ section{
     top: 47px;
     right: -105px;
 }
+
+@media(min-width: 600px){
+    .about-content-image img{
+        width: 60%;
+    }
+    .circles{
+        display: block;
+    }
+    .about-1{
+        position: absolute;
+        right: -340px;
+        top: 40px;
+    }
+    .about-2{
+        position: absolute;
+        left: -340px;
+        top: 40px;
+    }
+    .circles img{
+        width: 90%;
+    }
+    .about-pattern-1{
+        position: absolute;
+        top: 277px;
+        left: 20px;
+    }
+    .about-pattern-2{
+        position: absolute;
+        top: 47px;
+        right: 195px;
+    }
+    .about-page-text h2{
+        padding: 0 80px;
+        padding-bottom: 30px;
+    }
+    .about-container{
+        position: relative;
+    }
+}
