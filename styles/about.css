@@ -95,6 +95,7 @@ section{
     }
     .circles{
         display: block;
+        z-index: 1;
     }
     .about-1{
         position: absolute;
@@ -113,11 +114,13 @@ section{
         position: absolute;
         top: 277px;
         left: 20px;
+        z-index: 2;
     }
     .about-pattern-2{
         position: absolute;
         top: 47px;
         right: 195px;
+        z-index: 2;
     }
     .about-page-text h2{
         padding: 0 80px;
@@ -129,14 +132,43 @@ section{
 }
 
 @media(min-width: 1024px){
-    .about-content-image img{
-        width: 50%;
+    .about-content-image{
+        width: 100%;
     }
-    .about-page-text{
-        width: 50%;
+    .about-content-image img{
+        width: 80%;
+        max-width: 80%;
     }
     .about-container{
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-container:nth-of-type(1){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about-page-text{
+        text-align: left;
+        width: 40%;
+        padding: 50px 0;
+    }
+    .about-page-text h2{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .about-image{
+        position: relative;
+    }
+    .about-pattern-1{
+        position: absolute;
+        top: 267px;
+        left: -20px;
+    }
+    .about-pattern-2{
+        position: absolute;
+        top: 37px;
+        right: 95px;
     }
 }
