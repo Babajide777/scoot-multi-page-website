@@ -153,23 +153,23 @@ body {
     font-size: 18px;
     line-height: 25px;
 }
-
 .nav-bar{
-    display: flex;
     padding: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 .burger{
     padding-right: 80px;
 }
 
-.btn-ul{
+ .btn-ul{
     background-color: var(--dark-navy);
     width: 60%;
     height: 100vh;
 }
 
-.btn-ul li{
+ .btn-ul li{
     opacity: 0;
 }
 
@@ -190,73 +190,22 @@ body {
 
 .links-ul{
     list-style: none;
+    padding: 40px 40px;
+    margin: 10px 10px;
+    font-family: 'space mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
 }
-
-
-.links-ul a{
+.links-ul li a{
     color: var(--Light-grey);
     text-decoration: none;
-    font-family: 'Space Mono';
-    display: flex;
 }
-ul > :first-child{
-    display: flex;
-    position: absolute;
-    width: 89px;
-    height: 123px;
-    left: 32px;
-    top: 128px;
-}
-
-ul > :first-child + li + li{
-    display: flex;
-    position: absolute;
-    height: 25px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 25px/2);
-
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height, or 139% */
-}
-
-ul > :first-child + li + li + li{
-    display: flex;
-    position: absolute;
-    height: 25px;
-    left: 0%;
-    right: 12.36%;
-    top: calc(50% - 25px/2 + 49px);
-
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 25px;
-    /* identical to box height, or 139% */
-}
-
-.links-ul{
-    position: absolute;
-    width: 89px;
-    height: 123px;
-    left: 32px;
-    top: 128px;
-    display: flex;
-    justify-content: space-between;
-}
-
-div.btn-a{
-    position: absolute;
-    width: 192px;
-    height: 53px;
-    left: 32px;
-    top: 590px;
-    background-color: var(--Yellow);
+.links-ul li{
+    padding: 0;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .nav-active {
@@ -273,146 +222,74 @@ div.btn-a{
         transform: translateX(0%);
     }
 }
-
-.btnn{
-    position: absolute;
-    height: 25px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 25px/2);
-
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 25px;
-    /* identical to box height, or 167% */
-
-    text-align: center;
+.bolton{
+    font-family: 'space mono';
     background-color: var(--Yellow);
-    border-style: none;
+    border: none;
+    height: 53px;
+    width: 192px;
+    margin: 210px 20px;
 }
 
-.btnn a{
+.bolton a{
     color: var(--Snow);
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 
 /* Tablet navbar */
 
 @media  screen and (min-width:600px) {
-    * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    }
-    body {
-    width: 100%;
-    height: 100vh;
-    font-size: 18px;
-    line-height: 25px;
-    }
     nav{
         display: flex;
-        padding: 20px;
-        position: absolute;
-        width: 768px;
-        height: 96px;
-        left: 0px;
-        top: 0px;
-        background-color: #ffffff;
-        min-height: 8vh;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn-ul{
+        display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        align-items: center;
+        color: var(--Snow);
+    }
+    .links-ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .links-ul li{
+        margin: 0;
+        padding: 0;
+        margin-left: 20px;
+    }
+    .links-ul li a{
+        color: var(--Dim-grey);
     }
     .burger{
         display: none;
     }
-    .logo{
-        position: absolute;
-        width: 600px;
-        height: 28.56px;
-        left: 39px;
-        top: 34px;
-    }
-    .btn-ul{
-        background-color: #ffffff;
-    }
-    .links-ul{
-        display: flex;
-        position: absolute;
-        width: 249px;
-        height: 25px;
-        left: 205px;
-        top: 36px;
-        justify-content: space-between;
-
-    }
-    .links-ul a{
-        color: var(--Dim-grey);
-        font-family: 'Space Mono';
-        font-style: normal;
-        display: flex;
-    }
-    ul > :first-child{
-        display: flex;
-        position: absolute;
-        height: 25px;
-        left: 0%;
-        right: 81.53%;
-        top: calc(50% - 25px/2);
-
-        font-family: 'Space Mono';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        /* identical to box height, or 167% */
-    }
-    ul > :first-child + li + li{
-        display: flex;
-        position: absolute;
-        height: 25px;
-        left: 31.33%;
-        right: 38.96%;
-        top: calc(50% - 25px/2);
-
-        font-family: 'Space Mono';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        /* identical to box height, or 167%  */
-    }
-    ul > :first-child + li + li + li{
-        display: flex;
-        position: absolute;
-        height: 25px;
-        left: 73.9%;
-        right: 0%;
-        top: calc(50% - 25px/2);
-
-        font-family: 'Space Mono';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        line-height: 25px;
-        /* identical to box height, or 167% */
-    }
-    div.btn-a{
-        position: absolute;
-        width: 180px;
-        height: 53px;
-        left: 548px;
-        top: 22px;
-        justify-content: space-around;
-    }   
+   .bolton{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+   }
+   .logo{
+    margin: 0;
+    padding: 0;
+    margin-top: 25px;
+    margin-right: 90px;
+   }
+   .btn-ul{
+    background-color: transparent;
+   }
 }
 
 /* desktop*/
 @media screen and (min-width:1024px) {
-    * {
+    /* * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -480,7 +357,7 @@ div.btn-a{
         font-size: 15px;
         line-height: 25px;
         /* identical to box height, or 167% */
-    }
+    /* }
     ul > :first-child + li + li{
         display: flex;
         position: absolute;
@@ -495,7 +372,7 @@ div.btn-a{
         font-size: 15px;
         line-height: 25px;
         /* identical to box height, or 167% */
-    }
+   /* }
     ul > :first-child + li + li + li{
         display: flex;
         position: absolute;
@@ -508,8 +385,8 @@ div.btn-a{
         font-style: normal;
         font-weight: 700;
         font-size: 15px;
-        line-height: 25px;
+        line-height: 25px; */
         /* identical to box height, or 167% */
-    }
+   /* } */
     
 }
